@@ -1,0 +1,83 @@
+<md-dialog aria-label="Form">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Edit</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon aria-label="Close dialog"><i class="fa fa-close" style="color:white"></i></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+
+              <div layout="row" class="input-row layout-row">
+<!--        <md-input-container flex="" class="flex">
+          <label for="input_37">ID</label>
+          <input name="id" ng-model="cust._id"  class="ng-pristine ng-untouched md-input ng-invalid ng-invalid-required" id="input_37" aria-required="true" aria-invalid="true" ng-trim="false" style="">
+        <div class="md-errors-spacer"></div></md-input-container>-->
+        <md-input-container flex="" class="flex">
+          <label for="input_38">Name</label>
+          <input name="Name" type="text" ng-model="cust.name"  class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_38" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+      </div>
+      <!--<h3 class="md-subhead">Contact</h3>-->
+      <div layout="row" class="input-row layout-row">
+        <md-input-container flex="" class="flex">
+          <label for="input_40">Address</label>
+          <input name="address" type="text" ng-model="cust.home"  class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_40" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+      </div>
+      <!--<h3 class="md-subhead">Address 2</h3>-->
+      <div layout="row" class="input-row layout-row">
+        <md-input-container flex="" class="flex">
+          <label for="input_40">Image Url</label>
+          <input name="image" type="text" ng-model="cust.face"  class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_40" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+      </div>
+<!--      <h3 class="md-subhead">Location</h3>
+      <div layout="row" class="input-row layout-row">
+        <md-input-container flex="" class="flex">
+          <label for="input_42">City</label>
+          <input name="city" type="text" ng-model="updateCustomer.city" class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_42" aria-required="true" aria-invalid="true" st0yle="">
+        <div class="md-errors-spacer"></div></md-input-container>
+        <md-input-container flex="" class="flex">
+          <label for="input_43">State</label>
+          <input name="state" type="text" ng-model="updateCustomer.state"  class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_43" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+        <md-input-container flex="" class="flex">
+          <label for="input_44">Country</label>
+          <input name="iron" type="text" ng-model="updateCustomer.country"  class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_44" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+      </div>-->
+      <h3 class="md-subhead">Contact</h3>
+      <div layout="row" class="input-row layout-row">
+        <md-input-container flex="" class="flex">
+          <label for="input_42">Phone</label>
+          <input name="phone" type="text" ng-model="cust.phone" class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_42" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+        <md-input-container flex="" class="flex">
+          <label for="input_43">Email Id</label>
+          <input name="email" type="text" ng-model="cust.email"  class="ng-pristine ng-untouched md-input ng-valid-min ng-valid-max ng-invalid ng-invalid-required" id="input_43" aria-required="true" aria-invalid="true" style="">
+        <div class="md-errors-spacer"></div></md-input-container>
+      </div>
+        
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+<!--      <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+        More on Wikipedia
+      </md-button>-->
+      <span flex></span>
+      <md-button ng-click="editData()">
+       Update
+      </md-button>
+<!--      <md-button ng-click="answer('useful')">
+        Useful
+      </md-button>-->
+    </md-dialog-actions>
+  </form>
+</md-dialog>

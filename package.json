@@ -1,0 +1,21 @@
+{
+  "name": "chat-example",
+  "version": "0.0.0",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "async": "~0.2.8",
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^3.2.6",
+    "mongojs": "^2.4.0",
+    "nodemon": "^1.10.2",
+    "socket.io": "~0.9.14"
+  }
+}

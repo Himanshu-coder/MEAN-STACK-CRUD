@@ -1,0 +1,70 @@
+<!--<div ng-controller="dData" >
+            <b>Data from Database</b>
+            <ul>
+                <li ng-repeat="cust in customers">{{cust._id}} - {{cust.name}} - {{cust.quote}}{{cust.city}}</li>
+            </ul>
+        </div>
+        -->
+        
+<div class="container-fluid">
+
+            <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            
+                            <ol class="breadcrumb">
+                                <li>
+                                    <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                                </li>
+                                <li class="active">
+                                    <i class="fa fa-file"></i> List
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    
+
+                <!--END-->
+<md-toolbar class="md-table-toolbar md-default" ng-show="!options.rowSelection || !selected.length">
+  <div class="md-toolbar-tools">
+    <span>Friends Book</span>
+    <span flex></span>
+    <input ng-model="search" type="text" placeholder="search by any field" md-progress="promise">
+    
+  </div>
+</md-toolbar>
+
+                
+                
+<!-- exact table from live demo -->
+<md-table-container>
+  <table data-md-table data-md-row-select="options.rowSelection" multiple="{{options.multiSelect}}" data-ng-model="selected" md-progress="promise">
+    <thead md-head >
+      <tr md-row>
+        <th md-column md-order-by="nameToLower"><span> Image </span></th>
+        <th md-column md-numeric md-order-by="cust.name"><span> Name </span></th>
+        <th md-column md-numeric> Phone </th>
+        <th md-column md-numeric> Email </th>
+        <th md-column md-numeric> Address </th>
+        <th md-column md-numeric> Edit </th>
+        <th md-column md-numeric> Delete </th>
+      
+      </tr>
+    </thead>
+    <tbody md-body>
+      <tr md-row ngModel="selectedItems" ng-repeat="cust in customers | filter: search">
+        <td md-cell><img class="img-circle" src="{{ cust.face }}" alt="Image not found" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png';" height="60" width="60"/></td>
+        <td md-cell>{{ cust.name }}</td>
+        <td md-cell>{{ cust.phone }}</td>
+        <td md-cell>{{ cust.email }}</td>
+        <td md-cell>{{ cust.home }}</td>
+        <td md-cell><div ng-controller="Updater"><md-button class="md-raised md-primary" ng-click="upCustomer()" type="submit">Update</md-button></div> </td>
+        <td md-cell><div ng-controller="Deleter"><md-button class="md-raised md-primary" ng-click="deleteCustomer()" type="submit">Delete</md-button></div></td>
+        
+      </tr>
+    </tbody>
+  </table>
+</md-table-container>                
+                
+</div>
