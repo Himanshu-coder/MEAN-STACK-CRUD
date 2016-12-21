@@ -3,7 +3,7 @@
 A simple web-based administration portal to manage Friends for a user, portal should allow to perform basic CRUD operations. Portal should comprise of a dashboard to see No. of friends etc. It should allow to perform minimal functionality like search by name, phone, email, etc.
 
 
-Front End : Angular Material Designe + Bootstrap 4
+Front End : Angular Material Design + Bootstrap
 
 Screen Shots:
 
