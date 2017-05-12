@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://admin:admin@ds019856.mlab.com:19856/star-wars-quote', ['friends']);
+var db = mongojs('', ['friends']);
 const app = express();
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
 });
