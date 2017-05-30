@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 
 var mongojs = require('mongojs');
-var db = mongojs('', ['friends']);
+var db = mongojs('mongodb:', ['friends']);
 const app = express();
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
 });
@@ -31,7 +31,7 @@ app.use('/', express.static(__dirname + '/public/'))
 
 
 app.get('/search', function (req,res){
-  //tostring not required for mongojs
+  // tostring not required for mongojs
   var data = db.friends.find(function(err, result){
     // res.send(result);
     res.send(JSON.stringify(result));

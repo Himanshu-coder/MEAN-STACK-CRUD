@@ -172,11 +172,7 @@ controllers.Updater = function($scope, $http, $mdDialog){
                 if(err) console.log(err);
                     console.log(res);            
             });*/
-    
-        
     }
     }
-
-
 
         demoApp.controller(controllers);
